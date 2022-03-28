@@ -1,0 +1,29 @@
+//iphone
+@mixin xs {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+//ipad
+@mixin sm {
+  @media(min-width: 577px)and (max-width: 768px) {
+    @content;
+  }
+}
+//ipad pro
+@mixin md {
+  @media (min-width: 769px) and(max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media(max-width: 1024px)and(max-width: 1140px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: 1140px) {
+    @content;
+  }
+}
